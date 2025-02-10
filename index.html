@@ -21,7 +21,7 @@
         
         async function fetchPlayers() {
             try {
-                const response = await fetch(`https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=YOUR_STEAM_API_KEY&filter=\"addr\${serverIP}:${serverPort}\"`);
+                const response = await fetch(`https://api.steampowered.com/IGameServersService/GetServerList/v1/?key=7559CCC0178981DBE2D9979BECB3B4F9&filter=\"addr\${serverIP}:${serverPort}\"`);
                 const data = await response.json();
                 
                 if (data.response && data.response.servers.length > 0) {
